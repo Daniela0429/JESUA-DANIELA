@@ -1,0 +1,199 @@
+<HTML>
+<HEAD>
+<TITLE>¿EL AMOR?</TITLE>
+</HEAD>
+ 
+<BODY BACKGROUND="FONDO PRINCIPAL.jpg" TEXT="black">
+ 
+<div style="
+width: 60%;
+margin: auto;
+background-color: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+">
+ 
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+
+<h1 style="
+color: #d63384;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+font-family: 'Lemon', cursive;
+margin: 0;
+">
+¿CÓMO ME ENAMORÉ DE TI?
+</h1>
+
+<img src="music.jpg" style="
+width: 40px;
+height: 40px;
+">
+
+</div>
+ 
+<hr style="
+border: none;
+height: 2px;
+background-color: #d63384;
+width: 80%;
+">
+
+<style> 
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+ 
+.item:hover {
+  background-color: #ffe4ec;
+  transform: scale(1.03);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+ 
+.item img {
+  width: 100px;
+  height: 90px;
+  margin-right: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+ 
+.item:hover img {
+  transform: scale(1.1);
+}
+ 
+.item h2 {
+  font-family: 'Le Jardin des Coquelicots', cursive;
+  color: #d63384;
+}
+</style>
+ 
+<!-- IMAGEN PRINCIPAL -->
+
+<div style="float: right; margin-left: 20px; margin-right: 80px; text-align: center;">
+
+<img src="Foto.jpg" style="
+border: 3px solid black;
+padding: 5px;
+border-radius: 10px;
+width: 250px;
+">
+<p style="margin-top: 5px; color: #555;">
+ Presionen el botón de música.
+</p>
+</div>
+ 
+<br><br>
+ 
+<div class="item">
+<a href=como-te-conoci.html>
+<img src="CONOCÍ.JPG">
+</a>
+<h2>¿Cómo Te Conocí?</h2>
+</div>
+ 
+<div class="item">
+<a href=gustarme.HTML>
+<img src="GUSTAR.JPG">
+</a>
+<h2>¿Cómo Me Gustaste?</h2>
+</div>
+ 
+<div class="item">
+<a href= fisico.HTML>
+<img src="Actractivo.JPG">
+</a>
+<h2>Atractivos Físicos y Emocionales</h2>
+</div>
+ 
+<div class="item">
+<a href=Sientoti.HTML>
+<img src="SIENTO.JPG">
+</a>
+<h2>Lo que Siento por Ti</h2>
+</div>
+ 
+<div class="item">
+<a href= poitu.HTML>
+<img src="TU.JPG">
+</a>
+<h2>¿Por Qué Tú?</h2>
+</div>
+ 
+<div class="item">
+<a href=Razon.HTML>
+<img src="RAZONES.JPG">
+</a>
+<h2>Razones Por Las Que Te Amo</h2>
+</div>
+ 
+<div class="item">
+<a href= Vir.HTML>
+<img src="VIVIR.JPG">
+</a>
+<h2>Lo Que Quiero Vivir Contigo</h2>
+</div>
+ 
+<div class="item">
+<a href= Gras.HTML>
+<img src="GRACIAS.JPG">
+</a>
+<h2>Gracias Por Todo</h2>
+</div>
+ 
+<style> 
+.corazon {
+  position: fixed;
+  bottom: 0;
+  color: #ff4e50;
+  font-size: 20px;
+  animation: subir 4s linear forwards;
+  pointer-events: none;
+}
+ 
+@keyframes subir {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 0;
+  }
+}
+</style>
+ 
+<script> 
+setInterval(function() {
+  var corazon = document.createElement("div");
+  corazon.className = "corazon";
+  corazon.innerHTML = "Love";
+  corazon.style.left = Math.random() * 100 + "vw";
+  document.body.appendChild(corazon);
+ 
+  setTimeout(function() {
+    corazon.remove();
+  }, 4000);
+}, 300);
+</script>
+ 
+<audio id="Cancion" autoplay loop>
+  <source src="Cancion.mp3" type="audio/mpeg">
+</audio>
+ 
+<script> 
+document.addEventListener("click", function() {
+  document.getElementById("Cancion").play();
+});
+</script>
+ 
+ 
+</div>
+ 
+ 
+</body>
